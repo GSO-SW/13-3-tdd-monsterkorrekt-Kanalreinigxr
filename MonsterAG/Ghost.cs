@@ -8,34 +8,38 @@ namespace MonsterAG
 {
     public class Ghost
     {
+
+        private string name;
+        private int size = 1;
         public Ghost(string name)
         {
-            throw new NotImplementedException();
+            this.name = name;
         }
 
         public string Name
         {
             get
             {
-                throw new NotImplementedException()();
+                return name;
             }
         }
 
         public int Size
         {
-            get
-            {
-                throw new NotImplementedException()();
-            }
             set
             {
-                throw new NotImplementedException()();
+                    size = value;
+            }
+            get
+            {
+                return size;
+
             }
         }
 
         public string Haunt()
         {
-            throw new NotImplementedException()();
+            return name + "Spooky sagt: 'Buh'" + size;
         }
     }
 }
